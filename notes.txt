@@ -1,0 +1,43 @@
+form -> name attribute 
+		method="post" -> data hidden 
+		method="get" url data 
+		action="SignupServlet"
+		
+		
+SignupServlet ->
+		what is servlet ? 
+		how to create servlet ? 
+		
+		
+java class > 
+
+	class SignupServlet extends HttpServlet{
+		service()
+	}
+	
+thread ? 
+
+class A extends Thread 
+{
+	public void run(){
+	
+	}
+}
+
+
+
+how to link servlet-api.jar from apachetomcat/lib 
+
+project -> right click -> properties -> java build path -> 
+click on lib tab -> add external -> click -> browse -> servlet-api.jar -> open ->
+order and export tab click -> select all -> apply and close 
+
+
+
+how to create servlet ? 
+three steps 
+1) class extends HttpServlet 
+2) override service -> public void service(HttpServletRequest,HttpServletResponse) 
+3) @WebServlet() -> url mapping 
+	
+	
