@@ -41,6 +41,66 @@ three steps
 3) @WebServlet() -> url mapping 
 	
 ---------------------------------------------------
+ 		Input.html 
+No.1   10
+No.2   45 
+
+	Add()   Sub()  Mul(*)   Div() 
+	
+	submit 
+
+Next-> 
+450 
+
+
+
+ 		Input.html 
+No.1   
+No.2   45 
+
+	Add()   Sub()  Mul(*)   Div() 
+	
+	submit 
+
+Please Enter N1 
+
+
+
+
+ 		Input.html 
+No.1   10
+No.2    
+
+	Add()   Sub()  Mul(*)   Div() 
+	
+	submit 
+Please Enter N2 
+
+
+
+ 		Input.html 
+No.1   10
+No.2   45 
+
+	Add()   Sub()  Mul()   Div() 
+	
+	submit 
+Please Select Choice 
+
+
+ 		Input.html 
+No.1   
+No.2     
+
+	Add()   Sub()  Mul( )   Div() 
+	
+	submit 
+
+Please Enter N1 
+Please Enter N2 
+Please Select Choice 
+---------------------------------------------------
+
 
 
 
