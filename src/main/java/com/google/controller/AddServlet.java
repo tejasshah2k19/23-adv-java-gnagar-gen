@@ -16,21 +16,35 @@ public class AddServlet extends HttpServlet {
 
 		String n1 = request.getParameter("n1");// ""
 		String n2 = request.getParameter("n2");
+		String opr = request.getParameter("opr");
 
 		System.out.println("n1 => " + n1);
 		System.out.println("n2 => " + n2);
 
 		boolean isError = false;// no error
-		String error = ""; 
+		String error = "";
+		
+		String digit = "[0-9]+";
+		
+		
 		if (n1 == null || n1.trim().length() == 0) {
 			isError = true;
 			error = error + "Please Enter N1<br>";
+		}else if( n1.matches(digit) == false) {
+			isError = true; 
+			error = error + "Please Enter Valid N1<br>";
+				
 		}
 
 		if (n2 == null || n2.trim().length() == 0) {
 			isError = true;
 			error = error + "Please Enter N2<br>";
-			
+
+		}
+
+		if (opr == null) {
+			isError = true;
+			error = error + "Please Select 1 Operation<br>";
 		}
 
 		if (isError == false) {
@@ -39,9 +53,20 @@ public class AddServlet extends HttpServlet {
 
 			int no1 = Integer.parseInt(n1);// ""
 			int no2 = Integer.parseInt(n2);
-			int ans = no1 + no2;
-			System.out.println(no1 + no2);
+			int ans = 0;
+			
+			if(opr.equals("add"))  {
+				ans = no1+no2; 
+			}else if(opr.equals("sub"))  {
+				ans = no1-no2; 
+			}else if(opr.equals("mul"))  {
+				ans = no1 * no2; 
+			}else if(opr.equals("div"))  {
+				ans = no1 / no2; 
+			}
 
+			
+			
 			// audio video pdf xls image html text
 			response.setContentType("text/html");// MIME TYPE
 			// text/txt
@@ -61,8 +86,8 @@ public class AddServlet extends HttpServlet {
 			response.setContentType("text/html");// MIME TYPE
 			PrintWriter out = response.getWriter(); // IO
 			out.print("<html><body>");
-			out.print("<font color=red>"+error+"</font>");
-			
+			out.print("<font color=red>" + error + "</font>");
+
 			out.print("</body></html>");
 
 		}
