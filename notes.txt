@@ -101,6 +101,31 @@ Please Enter N2
 Please Select Choice 
 ---------------------------------------------------
 
+Filter :-  Pre Process 
+
+ICICI ->Login  {india,usa,uk,pakistan}
+
+
+whatsapp -> Mr X -> image50MB -> WhatsAppServer50MB --> MR Y 50MB 
+ 
+
+whatsapp -> Mr X -> image50MB -> Filter{compression} 25MB -> WhatsAppServer25MB --> MR Y 50MB 
+
+
+
+
+steps for filter ? 
+
+1) class implements Filter 
+2) override method { init doFilter destroy } 
+3) Mapping @WebFilter 
+
+
+
+
+
+
+
 
 
 
