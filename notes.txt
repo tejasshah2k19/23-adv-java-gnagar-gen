@@ -122,11 +122,90 @@ steps for filter ?
 
 
 
+Jsp -> Filter | Servlet 
+
+-------------------------------------------
+
+
+input - process - output 
+
+Name    : 
+City    :
+PinCode : 
+Weight  :
+
+			submit 
+			
+
+input - filter - process - output 
+			
+		
+------------------------------------------------------------	
+		
+input read -> form -> servlet 
+
+servlet -> validation -> regex 
+
+filter  -> validation 
+
+jsp -> 
+
+----------------------------------------------------------
+JSP -> 	Java Server Page 
+        Java Servlet Page { jsp -> servlet } 
+        
+        J2EE -> jsp view technology 
+        		extension servlet 
+        		
+        		
+        		view - frontend - browser { HTML } 
+        		
+        		why? html -> jsp ? 
+        		html-> static , you can't write java stuff 
+        		jsp -> dynamic, you can write java stuff 
+        		
+        		
+        		jsp -> HTML + Java  
+        	
+		HTML X 
+		jsp 
+		
+		by default -> html 
+		java -> XXX 
+		
+JAVA
+	1)<% %>  :  scriptlet -> java logic  
+	2)<%= %> : expression -> java variable print  
+	3) declaration**
+		
+		
+		
+jsp -> 9 object 
+
+-----------------------------------------------------------			
+			
+			
+			
+			
+			
+			
+			
+
+
+ 
 
 
 
 
 
 
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
