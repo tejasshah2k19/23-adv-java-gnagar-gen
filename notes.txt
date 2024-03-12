@@ -185,11 +185,97 @@ jsp -> 9 object
 -----------------------------------------------------------			
 			
 			
+			PSignup.jsp 
+					email
+					password
+					firstName 
+			PSignupServlet -> ArrayList -> 
+						5 add 
+			
+			PListUsers.jsp 
+							<a href="PUserSearch.jsp">Search</a>			
 			
 			
+			PSearchUser.jsp 
+				
+				name :  ra 
+				
+				firstName : ra 
+				email     : ra 
+				
+			PSearchServlet 
+					ra -> name | email 
+					jsp -> forward 
 			
-			
-			
+			PSearchResult.jsp 
+					Ravan
+					ram 
+					
+				
+----------------------------------------------------------------
+
+store data into database ! 
+
+CRUD : create read update delete 
+
+
+
+java --> db -> sql 
+
+
+tool -> sql -> db 
+
+command line tool - gui tool -> query 
+
+
+servlet{java}  -> sql -> db 
+
+
+
+1) servlet -> database -> open -> connection 
+2) preapred statement -> sql -> query 
+ 
+
+1) mysql-connector.jar -> link into project -> 
+
+
+----> 
+	create database 24advgnr; 
+	
+	use 24advgnr;
+	
+	create table users (
+		userId int primary key auto_increment, 
+		firstName varchar(30),
+		lastName varchar(30),
+		email varchar(30),
+		password varchar(30)
+	); 
+	
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
