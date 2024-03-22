@@ -23,7 +23,6 @@ public class DSignupServlet extends HttpServlet {
 		String lastName = request.getParameter("lastName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-
 		// validation
 		if (Validator.isBlank(firstName)) {
 

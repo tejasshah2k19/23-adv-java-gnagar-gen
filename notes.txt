@@ -255,31 +255,161 @@ servlet{java}  -> sql -> db
 	
 	
 		
+-------------------------------
+
+inclusion 
 
 
 
+	header? 
+	footer?
+	
+	Header.jsp 
+	Footer.jsp 
+	
+	Product.jsp -> header footer 
+	
+	1)static inclusion 	->  <%@ include file="" %> 
+	2)dynamic inclusion -> <jsp:include page="" />   
+	
 
 
+	static inclusion => 
+		copy all the code from main jsp to include jsp 
+			so if your List.jsp has 3 line and Header.jsp has  3 line 
+					then we can say we have 6 line of code 
+
+		
+	dynamic inclusion =>
+			it will jump and get the output only 
+			here we don't have any line of code so List.jsp remain same 
+			
+						
+			
+	when we want to access resources/variable of the inclusion jsp then 
+	we have to perform static inclusion other wise dynamic is oky 
+			
+	
+-----------------------------------------------------------------------------------------
+
+header.jsp  
+footer.jsp  
 
 
+welcome 
+home
+myorder 
 
+inclusion -> 
 
+	Welcome.jsp  { code + 3 line code copy paste } 
+		Header.jsp 3 line -> 
+		Footer.jsp
+		static   { code + 3 line code copy paste } -> variable share 
+		dynamic  { code + output } 
+static 
+dynamic 
 
+---------------------------------------------------------------------------------------
 
+user -> 
 
+	admin 
+		login 
+		category 
+		item 
+		manage user 
+		manage orders 
+		forget password 
+		
+	customer 
+		signup
+		login 
+		browse product 
+		search product 
+		view product 
+		add to cart
+		checkout -> place order 
+		my orders -> 
+		forget password 		
 
+----------------------------------------------------------------------------------
+database -> 
 
+	table:users 
+	userId pk 
+	firstName
+	lastName
+	email
+	password
+	gender
+	age 
+	role : admin , customer 
+	address :
+	contactNum: 
+	otp 
+	
+	
+	table:category 
+	categoryId
+	categoryName  
 
+	table:item 
+	itemId 
+	name 
+	categoryId
+	price
+	description 
+	isAvailable 
+	isJain 
+	size 
+	
+	table:topings 
+	topingsId
+	itemId
+	name
+	price 
+	
+	
+	table:cart 
+	cartId
+	userId
+	itemId 
+	price 
+	qty 
+	
+	table:cart_item_toping
+	cart_item_toping_id : pk 
+	cartId
+	topingsId    
+	price  
 
-
-
-
-
-
-
-
+	
+	order: 
+	orderId 
+	userId
+	orderDate
+	status 
+	totalAmount 
+	
+	order_detail: 
+	order_detail_id:pk 
+	orderId
+ 	itemId 
+	price 
+	qty 
+	status 
+	
+	
+	table:order_detail_item_toping
+	order_detail_item_toping_id : pk 
+	orderDetailId
+	topingsId    
+	price  
+	
+-------------------------------------------------------------------------------
  
-
+ 
 
 
 
